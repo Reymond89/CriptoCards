@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header__container">
+            <nav class="header__navbar">
+                <div class="header__logo-container">
+                    <img class="header__logo" src="assets/img/Icon.svg" alt="Logo">
+                    <a class="header__name" href="#">Metacrypt
+                    </a>
+                </div>
+                <ul class="menu__list">
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <img class="menu__btn" src="assets/img/icons8-menú.svg" alt="">
+    
+    
+              
+            </nav>
+        </header>
+        <main>
+            <section class="cards__container">
+                <article class="cards">
+                    <h1 class="cards__title">Ethereum en Alsa!</h1>
+                    <p class="cards__description">Ethereum se incrementa esta semana!</p>
+                    <a class="cards__follow" href="#">Ver más</a>
+                </article>
+                <article class="cards">
+                    <h1 class="cards__title">Chainlink en bits!</h1>
+                    <p class="cards__description">Bajo un 30% su rendimiento</p>
+                    <a class="cards__follow" href="#">Ver más</a>
+                </article>
+                <article class="cards">
+                    <h1 class="cards__title">Doguecoin!</h1>
+                    <p class="cards__description">Litecoin sube de precio!</p>
+                    <a class="cards__follow" href="#">Ver más</a>
+                </article>
+                <article class="cards">
+                    <h1 class="cards__title">Chainlink en bits!</h1>
+                    <p class="cards__description">Ethereum se incrementa esta semana!</p>
+                    <a class="cards__follow" href="#">Ver más</a>
+                </article>
+            </section>
+        </main>
+    </div>
+
+
+
+    <script>
+        const menuHamburguesa = document.querySelector('.menu__btn');
+        const menuList =        document.querySelector('.menu__list');
+
+        menuHamburguesa.addEventListener('click', ()=>{
+            menuList.classList.toggle('menu__mobile')
+        }) 
+    </script>
+</body>
+</html>
